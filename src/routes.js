@@ -6,9 +6,9 @@ import AboutPage from './components/about/AboutPage';
 import CoursesPage from './components/courses/CoursesPage';
 
 export default (
-    <Route path="/" component={App}>
-        <IndexRoute path="home" component={HomePage} />
-        <Route path="courses" component={CoursesPage} />
-        <Route path="about" component={AboutPage} />
-    </Route>
+  <Route path="/" component={App}>
+    <IndexRoute path="home" component={HomePage} />
+    <Route path="courses" component={CoursesPage} />
+    <Route path="about" component={AboutPage} />
+  </Route>
 );
