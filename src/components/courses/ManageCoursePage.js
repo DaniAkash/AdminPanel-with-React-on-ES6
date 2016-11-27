@@ -16,19 +16,18 @@ class ManageCoursePage extends React.Component {
 
   render() {
     return (
-      <div>
-        <CourseForm
-          course={this.state.course}
-          errors={this.state.errors}
-          allAuthors={[]}
-        />
-      </div>
+      <CourseForm
+        course={this.state.course}
+        errors={this.state.errors}
+        allAuthors={this.props.authors}
+      />
     );
   }
 }
 
 ManageCoursePage.propTypes = {
-  course: PropTypes.object.isRequired
+  course: PropTypes.object.isRequired,
+  authors: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -40,7 +39,18 @@ function mapStateToProps(state, ownProps) {
     authorId: "",
     category: ""
   };
-  return {course};
+
+  const authorsFormattedForDropdown = state.authors.map(author => {
+    return {
+      value: author.id,
+      text: author.firstName + ' ' + author.lastName
+    };
+  });
+
+  return {
+    course,
+    authors: authorsFormattedForDropdown
+  };
 }
 
 function mapDispatchToProps(dispatch) {
