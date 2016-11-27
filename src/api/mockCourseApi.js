@@ -5,7 +5,7 @@ import delay from './delay';
 // All calls return promises.
 const courses = [
   {
-    id: "Live Chalkboard",
+    id: "Live-Chalkboard",
     title: "A board for doodling in real-time",
     watchHref: "http://www.livechalkboard.tk/",
     authorId: "dani-akash",
@@ -21,7 +21,7 @@ const courses = [
     category: "Nodejs"
   },
   {
-    id: "Admin Panel",
+    id: "Admin-Panel",
     title: "Admin Panel using React and Flux",
     watchHref: "http://www.adminpanelwithreact.cf/",
     authorId: "dani-akash",
@@ -29,7 +29,7 @@ const courses = [
     category: "React"
   },
   {
-    id: "React Development Environment",
+    id: "React-Development-Environment",
     title: "A fully automated development Environment for React and Flux (in ES5)",
     watchHref: "Project discontinued",
     authorId: "dani-akash",
