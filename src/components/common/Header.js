@@ -10,7 +10,6 @@ const Header = ({loading}) => {
       <Link to="/courses" activeClassName="active">Courses</Link>
       {" | "}
       <Link to="/about" activeClassName="active">About</Link>
-      {loading.toString()}
       {loading && <LoadingDots interval={100} dots={20}/>}
     </nav>
   );
