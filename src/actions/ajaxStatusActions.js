@@ -7,3 +7,7 @@ export function beginAjaxCall() {
 export function ajaxCallSuccess() {
   return {type: types.AJAX_CALL_SUCCESS};
 }
+
+export function ajaxCallErr() {
+  return {type: types.AJAX_CALL_ERR};
+}
